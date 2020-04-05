@@ -1,0 +1,23 @@
+.menu-bar {
+    @include grid-col(12, 1fr);
+}
+
+.menu-bar .logo {
+    @include col-lg(6);
+}
+
+.menu-bar .nav-menu {
+    @include col-lg(6);
+}
+
+.nav-menu ul {
+    @include flexbox(no-wrap, flex-end)
+
+    li {
+        font-size: 2rem;
+        list-style: none;
+        padding: 0 0.2rem;
+               
+    }
+}
+

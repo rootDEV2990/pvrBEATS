@@ -10,36 +10,42 @@
   grid-template-rows: repeat($repeat, $fr);
 }
 
-@mixin col-lg-($fr) {
+@mixin col-lg($fr) {
   grid-column: span $fr;
 }
 
-@mixin col-md-($fr) {
+@mixin col-md($fr) {
   grid-column: span $fr;
 }
 
-@mixin col-sm-($fr) {
+@mixin col-sm($fr) {
   grid-column: span $fr;
 }
 
-@mixin col-xs-($fr) {
+@mixin col-xs($fr) {
   grid-column: span $fr;
 }
 
-@mixin row-lg-($fr) {
+@mixin row-lg($fr) {
   grid-row: span $fr;
 }
 
-@mixin row-md-($fr) {
+@mixin row-md($fr) {
   grid-row: span $fr;
 }
 
-@mixin row-sm-($fr) {
+@mixin row-sm($fr) {
   grid-row: span $fr;
 }
 
-@mixin row-xs-($fr) {
+@mixin row-xs($fr) {
   grid-row: span $fr;
 }
 
 /* flexbox */
+
+@mixin flexbox($wrap, $j-content) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $j-content;
+}
