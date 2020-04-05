@@ -1,0 +1,45 @@
+/* grid */
+
+@mixin grid-col($repeat, $fr) {
+  display: grid;
+  grid-template-columns: repeat($repeat, $fr);
+}
+
+@mixin grid-row($repeat, $fr) {
+  display: grid;
+  grid-template-rows: repeat($repeat, $fr);
+}
+
+@mixin col-lg-($fr) {
+  grid-column: span $fr;
+}
+
+@mixin col-md-($fr) {
+  grid-column: span $fr;
+}
+
+@mixin col-sm-($fr) {
+  grid-column: span $fr;
+}
+
+@mixin col-xs-($fr) {
+  grid-column: span $fr;
+}
+
+@mixin row-lg-($fr) {
+  grid-row: span $fr;
+}
+
+@mixin row-md-($fr) {
+  grid-row: span $fr;
+}
+
+@mixin row-sm-($fr) {
+  grid-row: span $fr;
+}
+
+@mixin row-xs-($fr) {
+  grid-row: span $fr;
+}
+
+/* flexbox */
