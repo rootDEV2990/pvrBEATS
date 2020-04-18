@@ -4,15 +4,35 @@
         <title>pvrBEATS</title>
         <link rel="stylesheet" href="assets/css/min.style.css">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <style type="text/css">
+            body {margin:0;color: white;background-color: black;}
+            img {width:100%;}
+            .main {display: flex; justify-content: space-around;}
+            .main div {width: 50%;}
+            .main div:nth-child(2) { display: flex; flex-wrap: wrap; }
+            .fa-spotify {color: #1ed760;}
+            .fa-youtube {color: #ff0000;}
+            .fa-bitcoin {color: #ef8e1a;}
+            .fab {border-radius: 5px; padding: 0 3px;}
+            .fa-instagram {background: #f09433; background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );}
+            audio {width: 100%; background-color: rgba(0,0,0,0.3);}
+            .call-to-action {background-color: #1ed760; color: black; text-align: center; display: flex; justify-content: space-around; flex-wrap: wrap;}
+            .call-to-action h2 {width: 100%; font-size: 1.5rem;}
+            .call-to-action article {width: 45%;text-align: right;padding-top:5%; }
+            .call-to-action article p {margin-left: 40%;}
+            .call-to-action figure {width: 45%;text-align: left;}
+            .call-to-action .fa-spotify {font-size: 15rem;}
+            .black {color: black}
+        </style>
     </head>
     <body>
         <header class="menu-bar">
             <figure class="logo">
-                <img src="./assets/img/logo.png" alt="logo">
+                <img src="./assets/img/logo.png" alt="pvrBEATS">
             </figure>
             <nav class="nav-menu">
                 <ul>
-                    <li><i class="fab fa-instagram-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
                     <li><i class="fab fa-spotify"></i></li>
                     <li><i class="fab fa-youtube"></i></li>
                     <li><i class="fab fa-bitcoin"></i></li>
@@ -20,13 +40,44 @@
             </nav>
         </header>
         <main>
-            <section class="chatroom-main">
-
+            <div>
+                <img style="width: 100%;" src="slider.gif">
+            </div>
+            <section>
+                 <audio controls autoplay>
+                  <source src="horse.ogg" type="audio/ogg">
+                  <source src="http://162.210.196.140:19303/;nocache" type="audio/mpeg">
+                  Your browser does not support the audio tag.
+                </audio> 
             </section>
-            <section class="player">
-                <video controls>
-                    <source src="http://162.210.196.140:19303/;nocache" type="audio/mp3">
-                    </video>
+            <section class="main">
+                <div>
+                    <img src="binance-banner.gif">
+                </div>
+                <div>
+                    <img src="instagram-banner.gif">
+                    <img src="youtube-banner.gif">
+                </div>
+            </section>
+            <section class="call-to-action">
+                <h2>Follow us on Spotify</h2>
+                <article>
+                    <h3>Your Support goes a long way<h3>
+                    <p>Help us so we may grow and keep bringing you the best BEATs. We hope you enjoy our hard work :)</p>
+                </article>
+                <figure>
+                    <i class="fab fa-spotify black"></i>  
+                </figure>
+            </section>
+            <section class="call-to-action">
+                <h2>Follow us on Spotify</h2>
+                <article>
+                    <h3>Your Support goes a long way<h3>
+                    <p>Help us so we may grow and keep bringing you the best BEATs. We hope you enjoy our hard work :)</p>
+                </article>
+                <figure>
+                    <i class="fab fa-spotify black"></i>  
+                </figure>
             </section>
         </main>
         <!--script src="//myradiostream.com/embed/pvrBEATS"></script-->
