@@ -31,6 +31,10 @@
             .call-to-action figure {width: 45%;text-align: left;}
             .call-to-action .fa-spotify {font-size: 15rem;}
             .black {color: black}
+            .signature {display: flex; justify-content: center; flex-wrap: wrap; padding: 3% 0;}
+            .signature h6 {width: 100%; text-align: center;}
+            .footer-nav {display: flex; justify-content: center; width: 100%; font-size: 2rem;}
+            li {list-style-type: none;}
             /* slider */
             * {box-sizing: border-box;}
             body {font-family: Verdana, sans-serif;}
@@ -41,6 +45,8 @@
             .slideshow-container {
               position: relative;
               margin: auto 0;
+              height: 60vh;
+              overflow: hidden;
             }
 
             .slideshow-container {
@@ -101,11 +107,6 @@
               to {opacity: 1}
             }
 
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-              .text {font-size: 11px}
-            }
-
             /* sliderads */
             .mySlidesAds {display: none;}
 
@@ -129,6 +130,18 @@
               display: inline-block;
               transition: background-color 0.6s ease;
             }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 720px) {
+              .slideshow-container { height: 100vh;}
+            }
+
+            
 
         </style>
     </head>
@@ -260,13 +273,19 @@
                 <div class="col-6">
                     <div class="slideshow-container-ads">
                         <div class="mySlidesAds fade">
-                          <img src="./img/ads/binance/binance-0.png" style="width:100%">
+                            <a href="https://www.binance.com/en/register?ref=35160725" target="_blank">
+                                <img src="./img/ads/binance/binance-0.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlidesAds fade">
-                          <img src="./img/ads/binance/binance-1.png" style="width:100%">
+                            <a href="https://www.binance.com/en/register?ref=35160725" target="_blank">
+                                <img src="./img/ads/binance/binance-1.png" style="width:100%">
+                            </a>
                         </div>
                         <div class="mySlidesAds fade">
-                          <img src="./img/ads/binance/binance-2.png" style="width:100%">
+                            <a href="https://www.binance.com/en/register?ref=35160725" target="_blank">
+                                <img src="./img/ads/binance/binance-2.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
                     <br>
@@ -297,6 +316,26 @@
             </section>
             
         </main>
+        <footer>
+            <div class="signature">
+                <h6>Responsive © rootDEV2990</h6>
+                <br>
+                <ul class="footer-nav">
+                    <li class="p-2">
+                        <a href="https://raw.githack.com/rootDEV2990/devPlayground/master/index.html" target="_blank"><i class="fas fa-globe" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="p-2">
+                        <a href="https://github.com/rootDEV2990" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="p-2">
+                        <a href="https://www.linkedin.com/in/miguel-enciso-6474741a1/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="p-2">
+                        <a href="https://twitter.com/m29902" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
         <!-- slik slider end --> 
         <script type="text/javascript">
             var slideIndex = 0;
