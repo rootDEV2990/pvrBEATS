@@ -3,12 +3,20 @@
     <head>
         <title>pvrBEATS</title>
         <link rel="stylesheet" href="assets/css/min.style.css">
+        <!--foundation-->
+        <link rel="stylesheet" href="assets/css/app.css">
+        <script src='assets/js/app.js'></script>
+        <!--slik-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/> 
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <style type="text/css">
             body {margin:0;color: white;background-color: black;}
             img {width:100%;}
+            figure {width: 100%;}
             .main {display: flex; justify-content: space-around;}
-            .main div {width: 50%;}
+            .main .col-6 {width: 50%;}
             .main div:nth-child(2) { display: flex; flex-wrap: wrap; }
             .fa-spotify {color: #1ed760;}
             .fa-youtube {color: #ff0000;}
@@ -23,6 +31,105 @@
             .call-to-action figure {width: 45%;text-align: left;}
             .call-to-action .fa-spotify {font-size: 15rem;}
             .black {color: black}
+            /* slider */
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+              position: relative;
+              margin: auto 0;
+            }
+
+            .slideshow-container {
+              position: relative;
+              margin: auto 0;
+            }
+
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+
+            .active {
+              background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+
+            /* sliderads */
+            .mySlidesAds {display: none;}
+
+            /* Slideshow container */
+            .slideshow-container-ads {
+              position: relative;
+              margin: auto 0;
+            }
+
+            .slideshow-container-ads {
+              position: relative;
+              margin: auto 0;
+            }
+
+            .dot-ads {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+
         </style>
     </head>
     <body>
@@ -40,8 +147,107 @@
             </nav>
         </header>
         <main>
+            
             <div>
-                <img style="width: 100%;" src="https://media.githubusercontent.com/media/rootDEV2990/pvrBEATS/development/img/slider.gif">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 13</div>
+                      <img src="./img/slider/slide-0.png" style="width:100%">
+                      <!-- <div class="text">Caption Text</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 13</div>
+                      <img src="./img/slider/slide-1.png" style="width:100%">
+                      <!-- <div class="text">Caption Two</div> -->
+                   </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 13</div>
+                      <img src="./img/slider/slide-2.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 13</div>
+                      <img src="./img/slider/slide-3.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 13</div>
+                      <img src="./img/slider/slide-4.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 13</div>
+                      <img src="./img/slider/slide-5.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">7 / 13</div>
+                      <img src="./img/slider/slide-6.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">8 / 13</div>
+                      <img src="./img/slider/slide-7.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">9 / 13</div>
+                      <img src="./img/slider/slide-8.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">10 / 13</div>
+                      <img src="./img/slider/slide-9.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">11 / 13</div>
+                      <img src="./img/slider/slide-10.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">12 / 13</div>
+                      <img src="./img/slider/slide-11.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">13 / 13</div>
+                      <img src="./img/slider/slide-12.png" style="width:100%">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center;display: none;">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>  
+                  <span class="dot"></span>  
+                  <span class="dot"></span>  
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>  
+                  <span class="dot"></span>  
+                  <span class="dot"></span>  
+                  <span class="dot"></span>   
+                  <span class="dot"></span>
+                </div>
+
             </div>
             <section>
                  <audio controls autoplay>
@@ -51,12 +257,32 @@
                 </audio> 
             </section>
             <section class="main">
-                <div>
-                    <img src="https://media.githubusercontent.com/media/rootDEV2990/pvrBEATS/development/img/binance-banner.gif">
+                <div class="col-6">
+                    <div class="slideshow-container-ads">
+                        <div class="mySlidesAds fade">
+                          <img src="./img/ads/binance/binance-0.png" style="width:100%">
+                        </div>
+                        <div class="mySlidesAds fade">
+                          <img src="./img/ads/binance/binance-1.png" style="width:100%">
+                        </div>
+                        <div class="mySlidesAds fade">
+                          <img src="./img/ads/binance/binance-2.png" style="width:100%">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center;">
+                      <span class="dotAds"></span> 
+                      <span class="dotAds"></span> 
+                      <span class="dotAds"></span>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://media.githubusercontent.com/media/rootDEV2990/pvrBEATS/development/img/instagram-banner.gif">
-                    <img src="https://media.githubusercontent.com/media/rootDEV2990/pvrBEATS/development/img/youtube-banner.gif">
+                <div class="col-6">
+                    <figure>
+                        <img src="./img/ads/instagram.png">
+                    </figure>
+                    <figure>
+                        <img src="./img/ads/youtube.png">
+                    </figure>
                 </div>
             </section>
             <section class="call-to-action">
@@ -71,6 +297,47 @@
             </section>
             
         </main>
+        <!-- slik slider end --> 
+        <script type="text/javascript">
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            var slideIndexAds = 0;
+            showSlidesAds();
+
+            function showSlidesAds () {
+              var i;
+              var slidesAds = document.getElementsByClassName("mySlidesAds");
+              var dotsAds = document.getElementsByClassName("dotAds");
+              for (i = 0; i < slidesAds.length; i++) {
+                slidesAds[i].style.display = "none";  
+              }
+              slideIndexAds++;
+              if (slideIndexAds > slidesAds.length) {slideIndexAds = 1}    
+              for (i = 0; i < dotsAds.length; i++) {
+                dotsAds[i].className = dotsAds[i].className.replace(" active", "");
+              }
+              slidesAds[slideIndexAds-1].style.display = "block";  
+              dotsAds[slideIndexAds-1].className += " active";
+              setTimeout(showSlidesAds, 2000); // Change image every 2 seconds
+            }
+        </script>  
         <!--script src="//myradiostream.com/embed/pvrBEATS"></script-->
     </body>
 </html>
