@@ -139,6 +139,7 @@
             /* On smaller screens, decrease text size */
             @media only screen and (max-width: 720px) {
               .slideshow-container { height: 100%;}
+              .pb-10 {padding-bottom: 10%;}
             }
 
             
@@ -278,7 +279,7 @@
 
             </div>
 
-            <section style="width: 100%; padding-bottom: 10%;display: block;">
+            <section class="pb-10" style="width: 100%; display: block;">
                 <audio controls autoplay>
                     <source src="http://162.210.196.145:37291/;nocache" type="audio/mpeg">
                     Your browser does not support the audio tag.
@@ -369,21 +370,10 @@
         <script type="text/javascript">
             var slideIndex = 0;
             showSlides();
-
-          
-            
-          
-
-            
-            
-            
-
             function showSlides() {
               var i;
               var slides = document.getElementsByClassName("mySlides");
               var dots = document.getElementsByClassName("dot");
-              
-
               for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
               }
