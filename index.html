@@ -280,7 +280,7 @@
 
             <section style="width: 100%; padding-bottom: 10%;display: block;">
                 <audio controls autoplay>
-                    <source src="http://162.210.196.140:19303/;nocache" type="audio/mpeg">
+                    <source src="http://162.210.196.145:37291/;nocache" type="audio/mpeg">
                     Your browser does not support the audio tag.
                 </audio> 
             </section>
@@ -370,10 +370,19 @@
             var slideIndex = 0;
             showSlides();
 
-            function showSlides() {
+          
+            showSlides('mySlides', 'dots')  function showSlides(slidesClass, dotClass)      var slides = doc.getelementsbyclassname(slidesClass)
+          
+
+            
+            var dots = document.getElementsByClassName("dot");
+            var dotsAds = document.getElementsByClassName("dot2");
+
+            function showSlides(dots, dotsAds) {
               var i;
               var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
+              
+
               for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
               }
